@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SiteSpeed | Seu site pronto em 24h por R$ 99,90</title>
-  <meta name="description" content="Site em 24h por R$ 99,90 para pequenos negocios, autonomos e prestadores de servico. Pagina profissional, rapida e responsiva pronta para divulgar.">
+  <title>SiteSpeed | Site profissional em 24 horas por R$ 99,90</title>
+  <meta name="description" content="Site profissional em 24 horas por R$ 99,90 para pequenos negócios, autônomos e prestadores de serviço. Página rápida, responsiva e pronta para divulgar.">
   <meta name="theme-color" content="#061a3a">
-  <meta property="og:title" content="SiteSpeed | Site em 24h por R$ 99,90">
-  <meta property="og:description" content="Uma pagina profissional, rapida e responsiva para divulgar seu negocio com link pronto para enviar aos clientes.">
+  <meta property="og:title" content="SiteSpeed | Site profissional em 24 horas por R$ 99,90">
+  <meta property="og:description" content="Uma página rápida, responsiva e pronta para divulgar com link para enviar aos clientes no mesmo dia.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sitespeed.online">
   <meta property="og:site_name" content="SiteSpeed">
@@ -82,15 +82,14 @@
       font-size: 1.1rem;
     }
 
-    .brand-mark {
-      width: 34px;
-      height: 34px;
-      display: grid;
-      place-items: center;
+    .brand-logo {
+      display: block;
+      width: 172px;
+      height: auto;
+      padding: 7px 10px;
       border-radius: var(--radius);
-      background: linear-gradient(135deg, var(--cyan), var(--blue));
-      box-shadow: 0 12px 30px rgba(24, 213, 255, 0.28);
-      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
     }
 
     .domain {
@@ -200,19 +199,20 @@
       align-items: center;
       justify-content: center;
       min-height: 52px;
-      padding: 0 24px;
+      padding: 0 26px;
       border-radius: var(--radius);
-      background: linear-gradient(135deg, var(--cyan), var(--blue));
-      color: var(--white);
+      background: var(--white);
+      color: var(--navy);
       font-weight: 800;
-      box-shadow: 0 18px 42px rgba(18, 105, 255, 0.34);
+      border: 2px solid rgba(24, 213, 255, 0.7);
+      box-shadow: 0 18px 42px rgba(24, 213, 255, 0.28);
       transition: transform 180ms ease, box-shadow 180ms ease;
       cursor: pointer;
     }
 
     .button:hover {
       transform: translateY(-2px);
-      box-shadow: 0 24px 50px rgba(18, 105, 255, 0.42);
+      box-shadow: 0 24px 50px rgba(24, 213, 255, 0.42);
     }
 
     .microcopy,
@@ -420,6 +420,16 @@
       margin-bottom: 14px;
     }
 
+    .icon svg {
+      width: 21px;
+      height: 21px;
+      stroke: currentColor;
+      stroke-width: 2.2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
     .card h3 {
       margin-bottom: 6px;
       color: var(--navy);
@@ -531,7 +541,6 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
-      counter-reset: steps;
     }
 
     .step {
@@ -542,24 +551,23 @@
       background: #f8fcff;
     }
 
-    .step::before {
-      counter-increment: steps;
-      content: counter(steps);
-      display: grid;
-      place-items: center;
-      width: 36px;
-      height: 36px;
-      margin-bottom: 18px;
-      border-radius: var(--radius);
-      background: linear-gradient(135deg, var(--cyan), var(--blue));
-      color: var(--white);
-      font-weight: 900;
-    }
-
     .step h3 {
       color: var(--navy);
       font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .step p {
       margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .step-number {
+      display: inline-block;
+      color: var(--blue);
+      font-weight: 900;
+      margin-right: 4px;
     }
 
     .offer {
@@ -680,6 +688,11 @@
         display: none;
       }
 
+      .brand-logo {
+        width: 146px;
+        padding: 6px 8px;
+      }
+
       .hero {
         padding: 92px 0 56px;
       }
@@ -751,8 +764,7 @@
     <header class="topbar" aria-label="Topo">
       <div class="container topbar-inner">
         <a class="brand" href="#" aria-label="SiteSpeed">
-          <span class="brand-mark">S</span>
-          <span>SiteSpeed</span>
+          <img class="brand-logo" src="assets/logo-sitespeed.jpg" alt="SiteSpeed" width="720" height="177">
         </a>
         <span class="domain">sitespeed.online</span>
       </div>
@@ -762,22 +774,22 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="container hero-grid">
           <div>
-            <div class="eyebrow"><span class="eyebrow-dot"></span> Site rapido para negocio local</div>
-            <h1 id="hero-title">Seu site pronto em 24h por apenas R$ 99,90</h1>
-            <p class="hero-subtitle">Uma pagina profissional, rapida e responsiva para divulgar seu negocio com link pronto para enviar aos clientes.</p>
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Presença online em 24 horas para negócios locais</div>
+            <h1 id="hero-title">Site profissional em 24 horas.</h1>
+            <p class="hero-subtitle">Uma página rápida, responsiva e pronta para divulgar — com link para enviar aos clientes no mesmo dia.</p>
             <div class="price-row">
-              <div class="price" aria-label="Preco R$ 99,90">
-                <span>por</span>
+              <div class="price" aria-label="Preço R$ 99,90">
+                <span>pagamento único</span>
                 <strong>R$ 99,90</strong>
               </div>
-              <span class="price-note">entrega em ate 24h</span>
+              <span class="price-note">sem mensalidade</span>
             </div>
             <div class="cta-stack">
               <!-- INSERIR LINK DE PAGAMENTO AQUI NO FINAL -->
               <a class="button checkout-placeholder" href="#" data-placeholder="checkout-pendente" aria-disabled="true">Quero meu site em 24h</a>
-              <span class="microcopy">Pagamento e envio das informacoes combinados pelo atendimento.</span>
+              <span class="microcopy">Pagamento e envio das informações combinados pelo atendimento.</span>
             </div>
-            <p class="hero-mini">Link pronto para divulgar seu negocio</p>
+            <p class="hero-mini">Link pronto para divulgar seu negócio</p>
           </div>
 
           <div class="mockup-wrap" aria-label="Mockup visual de site em notebook e celular">
@@ -790,7 +802,7 @@
               </div>
               <div class="screen">
                 <div class="screen-header">
-                  <span>Seu Negocio</span>
+                  <span>Seu Negócio</span>
                   <span class="screen-pill"></span>
                 </div>
                 <div class="screen-title"></div>
@@ -821,39 +833,51 @@
       <section aria-labelledby="benefits-title">
         <div class="container">
           <div class="section-heading">
-            <h2 id="benefits-title">O essencial para aparecer online rapido</h2>
-            <p>Uma pagina simples, bonita e objetiva para transformar seu contato em divulgacao profissional.</p>
+            <h2 id="benefits-title">O essencial para aparecer online rápido</h2>
+            <p>Tudo que um negócio local precisa para aparecer online com credibilidade — sem complicação, sem espera, sem mensalidade.</p>
           </div>
           <div class="benefit-grid">
             <article class="card">
-              <div class="icon">GO</div>
-              <h3>Link pronto para divulgar</h3>
-              <p>Receba um link final para enviar aos clientes e colocar nas redes sociais.</p>
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M7 17 17 7"></path><path d="M9 7h8v8"></path><path d="M5 5h6"></path><path d="M5 12h4"></path><path d="M5 19h14"></path></svg>
+              </div>
+              <h3>Link pronto para WhatsApp, Instagram e Google</h3>
+              <p>Receba um endereço final para divulgar nos canais onde seus clientes já estão.</p>
             </article>
             <article class="card">
-              <div class="icon">W</div>
-              <h3>Botao para WhatsApp</h3>
-              <p>Facilite o contato direto de quem quer pedir orcamento ou comprar.</p>
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.7 7.1L4 20l1.4-4.1A8 8 0 1 1 20 11.5Z"></path><path d="M9 9.5c.4 2.1 1.8 3.7 4 4.6"></path><path d="M14 14.2h1.6"></path></svg>
+              </div>
+              <h3>Botão de contato direto via WhatsApp</h3>
+              <p>Facilite o atendimento de quem quer pedir orçamento, tirar dúvidas ou comprar.</p>
             </article>
             <article class="card">
-              <div class="icon">C</div>
-              <h3>Layout com suas cores</h3>
-              <p>Ajuste visual basico para combinar com a identidade da sua marca.</p>
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3 4 7v10l8 4 8-4V7l-8-4Z"></path><path d="M12 3v18"></path><path d="m4 7 8 4 8-4"></path></svg>
+              </div>
+              <h3>Identidade visual com as cores da sua marca</h3>
+              <p>Ajuste visual para a página parecer sua, não um modelo genérico.</p>
             </article>
             <article class="card">
-              <div class="icon">M</div>
-              <h3>Responsivo no celular</h3>
-              <p>A pagina fica clara e funcional em telas pequenas e no desktop.</p>
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"></rect><path d="M10 18h4"></path></svg>
+              </div>
+              <h3>Funciona perfeitamente no celular e no computador</h3>
+              <p>A página fica clara, rápida e fácil de acessar em qualquer tela.</p>
             </article>
             <article class="card">
-              <div class="icon">OK</div>
-              <h3>Visual profissional</h3>
-              <p>Design limpo, confiavel e direto para negocios que precisam vender.</p>
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"></path></svg>
+              </div>
+              <h3>Design limpo que transmite confiança ao cliente</h3>
+              <p>Visual direto, profissional e preparado para apresentar seu negócio com segurança.</p>
             </article>
             <article class="card">
-              <div class="icon">#</div>
-              <h3>Tags de posicionamento</h3>
-              <p>Estrutura basica para apresentar servicos, localidade e diferenciais.</p>
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 3.5 3.5"></path><path d="M8.5 11h5"></path><path d="M11 8.5v5"></path></svg>
+              </div>
+              <h3>Estrutura técnica para ser encontrado no Google</h3>
+              <p>Organização básica de conteúdo para serviços, localização e diferenciais.</p>
             </article>
           </div>
         </div>
@@ -862,15 +886,15 @@
       <section class="audience" aria-labelledby="audience-title">
         <div class="container audience-box">
           <div>
-            <h2 id="audience-title">Para quem e</h2>
-            <p>Ideal para autonomos, prestadores de servico, MEIs, lojas locais, saloes, clinicas, delivery, oficinas e profissionais liberais.</p>
+            <h2 id="audience-title">Para quem precisa estar online hoje.</h2>
+            <p>Autônomos, MEIs, prestadores de serviço, salões, clínicas, deliveries, oficinas, lojas locais e profissionais liberais que ainda dependem só do boca a boca ou das redes sociais.</p>
           </div>
-          <div class="audience-tags" aria-label="Tipos de negocios atendidos">
-            <span>Autonomos</span>
+          <div class="audience-tags" aria-label="Tipos de negócios atendidos">
+            <span>Autônomos</span>
             <span>MEIs</span>
             <span>Lojas locais</span>
-            <span>Saloes</span>
-            <span>Clinicas</span>
+            <span>Salões</span>
+            <span>Clínicas</span>
             <span>Delivery</span>
             <span>Oficinas</span>
             <span>Profissionais liberais</span>
@@ -882,21 +906,21 @@
         <div class="container included-grid">
           <div>
             <div class="section-heading">
-              <h2 id="included-title">O que esta incluso</h2>
-              <p>Uma estrutura enxuta para colocar seu negocio no ar sem complicacao.</p>
+              <h2 id="included-title">O que está incluso</h2>
+              <p>Uma estrutura enxuta para colocar seu negócio no ar com clareza, contato fácil e apresentação profissional.</p>
             </div>
             <ul class="checklist">
-              <li><span class="check">OK</span> Pagina unica profissional</li>
-              <li><span class="check">OK</span> Estrutura com apresentacao do negocio</li>
-              <li><span class="check">OK</span> Botao para WhatsApp</li>
-              <li><span class="check">OK</span> Link final para divulgacao</li>
-              <li><span class="check">OK</span> Ajuste basico de cores da marca</li>
-              <li><span class="check">OK</span> Entrega em ate 24h apos envio das informacoes</li>
+              <li><span class="check">✓</span> Página única profissional e responsiva</li>
+              <li><span class="check">✓</span> Seções de apresentação, serviços e contato</li>
+              <li><span class="check">✓</span> Botão de WhatsApp integrado</li>
+              <li><span class="check">✓</span> Link final pronto para divulgar</li>
+              <li><span class="check">✓</span> Identidade visual com as cores da sua marca</li>
+              <li><span class="check">✓</span> Entrega em até 24h após envio das informações</li>
             </ul>
           </div>
           <aside class="stat-panel" aria-label="Resumo da entrega">
             <strong>24h</strong>
-            <p>Depois do envio completo das informacoes, sua pagina entra na fila de montagem para entrega rapida.</p>
+            <p>Depois do envio completo das informações, sua página entra na fila de montagem para entrega rápida.</p>
           </aside>
         </div>
       </section>
@@ -905,20 +929,24 @@
         <div class="container">
           <div class="section-heading">
             <h2 id="steps-title">Como funciona</h2>
-            <p>Processo simples para sair do zero e ter um link divulgavel.</p>
+            <p>Processo simples para sair do zero e ter um link divulgável.</p>
           </div>
           <div class="step-grid">
             <article class="step">
-              <h3>Voce solicita o site</h3>
+              <h3><span class="step-number">01 —</span> Você solicita</h3>
+              <p>Clica no botão e combina o atendimento pelo WhatsApp.</p>
             </article>
             <article class="step">
-              <h3>Envia nome, contato, logo/cores e informacoes do negocio</h3>
+              <h3><span class="step-number">02 —</span> Envia as informações</h3>
+              <p>Nome do negócio, contato, logo, cores e descrição dos serviços.</p>
             </article>
             <article class="step">
-              <h3>Nos montamos a pagina</h3>
+              <h3><span class="step-number">03 —</span> A gente monta</h3>
+              <p>Sua página entra na fila e fica pronta em até 24 horas.</p>
             </article>
             <article class="step">
-              <h3>Voce recebe o link pronto para divulgar</h3>
+              <h3><span class="step-number">04 —</span> Você recebe o link</h3>
+              <p>Pronto para divulgar no WhatsApp, Instagram e onde quiser.</p>
             </article>
           </div>
         </div>
@@ -927,11 +955,11 @@
       <section class="offer" aria-labelledby="offer-title">
         <div class="container offer-box">
           <div>
-            <h2 id="offer-title">Comece hoje por <span class="offer-price">R$ 99,90</span></h2>
-            <p>Oferta simples para quem precisa aparecer online rapido, sem complicacao.</p>
+            <h2 id="offer-title">Seu negócio merece estar online hoje.</h2>
+            <p><span class="offer-price">R$ 99,90</span> — página profissional entregue em até 24 horas.</p>
           </div>
           <!-- INSERIR LINK DE PAGAMENTO AQUI NO FINAL -->
-          <a class="button checkout-placeholder" href="#" data-placeholder="checkout-pendente" aria-disabled="true">Solicitar meu site</a>
+          <a class="button checkout-placeholder" href="#" data-placeholder="checkout-pendente" aria-disabled="true">Quero meu site agora</a>
         </div>
       </section>
 
@@ -942,20 +970,24 @@
           </div>
           <div class="faq-grid">
             <details>
-              <summary>O site fica pronto mesmo em 24h?</summary>
-              <p>Sim, apos o envio completo das informacoes necessarias.</p>
+              <summary>O site fica pronto em 24h?</summary>
+              <p>Sim. Após receber todas as informações, sua página entra em produção e é entregue em até 24 horas úteis.</p>
             </details>
             <details>
               <summary>Posso usar minhas cores?</summary>
-              <p>Sim, o layout e ajustado de acordo com as cores da sua marca.</p>
+              <p>Sim. O layout é ajustado com as cores e identidade visual da sua marca.</p>
             </details>
             <details>
-              <summary>O botao chama no WhatsApp?</summary>
-              <p>Sim, podemos colocar botao direto para seu WhatsApp.</p>
+              <summary>O botão chama no WhatsApp?</summary>
+              <p>Sim. O botão leva direto para o seu número, facilitando o contato de clientes interessados.</p>
             </details>
             <details>
-              <summary>Ja vem com dominio?</summary>
-              <p>A oferta inclui a pagina/link pronto para divulgar. Dominio proprio pode ser configurado a parte.</p>
+              <summary>Já vem com domínio?</summary>
+              <p>A entrega inclui um link funcional pronto para divulgar. Domínio próprio, como seunegocio.com.br, pode ser configurado separadamente mediante orçamento.</p>
+            </details>
+            <details>
+              <summary>Preciso saber de tecnologia?</summary>
+              <p>Não. Você envia as informações e nós cuidamos de tudo. Nenhum conhecimento técnico necessário.</p>
             </details>
           </div>
         </div>
@@ -964,8 +996,8 @@
 
     <footer class="footer">
       <div class="container footer-inner">
-        <p><strong>SiteSpeed</strong> - sitespeed.online</p>
-        <p>Sites rapidos para negocios locais.</p>
+        <p><strong>SiteSpeed</strong> — Presença online em 24 horas para negócios locais.</p>
+        <p>sitespeed.online · contato via WhatsApp</p>
       </div>
     </footer>
   </div>
