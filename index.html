@@ -4,482 +4,463 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SiteSpeed | Site profissional em 24 horas por R$ 99,90</title>
-  <meta name="description" content="Site profissional em 24 horas por R$ 99,90 para pequenos negócios, autônomos e prestadores de serviço. Página rápida, responsiva e pronta para divulgar.">
-  <meta name="theme-color" content="#061a3a">
-  <meta property="og:title" content="SiteSpeed | Site profissional em 24 horas por R$ 99,90">
-  <meta property="og:description" content="Uma página rápida, responsiva e pronta para divulgar com link para enviar aos clientes no mesmo dia.">
+  <meta name="description" content="Site profissional em 24 horas por R$ 99,90 para negócios locais, autônomos, MEIs e prestadores de serviço. Página rápida, responsiva e pronta para divulgar.">
+  <meta name="theme-color" content="#0A1628">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.sitespeed.online/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta property="og:title" content="SiteSpeed | Site profissional em 24 horas">
+  <meta property="og:description" content="Uma página rápida, responsiva e pronta para divulgar por R$ 99,90, sem mensalidade.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sitespeed.online">
+  <meta property="og:url" content="https://www.sitespeed.online/">
   <meta property="og:site_name" content="SiteSpeed">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "SiteSpeed - Site profissional em 24 horas",
+      "provider": {
+        "@type": "Organization",
+        "name": "SiteSpeed",
+        "url": "https://www.sitespeed.online/"
+      },
+      "serviceType": "Criação de landing page para negócios locais",
+      "areaServed": "BR",
+      "offers": {
+        "@type": "Offer",
+        "price": "99.90",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock",
+        "url": "https://buy.stripe.com/eVqbJ24Y32zlbWO2FH9oc04"
+      }
+    }
+  </script>
   <style>
     :root {
-      --navy: #061a3a;
-      --navy-2: #082653;
-      --blue: #1269ff;
-      --cyan: #18d5ff;
-      --cyan-soft: #dff9ff;
-      --white: #ffffff;
-      --ink: #102033;
-      --muted: #5c6f86;
-      --line: rgba(255, 255, 255, 0.16);
-      --shadow: 0 24px 70px rgba(2, 18, 45, 0.18);
+      --primary: #0066FF;
+      --secondary: #00D4AA;
+      --dark: #0A1628;
+      --light: #F8FAFC;
+      --white: #FFFFFF;
+      --ink: #142033;
+      --muted: #64748B;
+      --line: #D9E4F2;
+      --soft-blue: #EAF2FF;
+      --soft-green: #E7FFF9;
+      --shadow-sm: 0 12px 30px rgba(10, 22, 40, 0.08);
+      --shadow-md: 0 22px 60px rgba(10, 22, 40, 0.16);
+      --shadow-cta: 0 20px 46px rgba(0, 212, 170, 0.32);
       --radius: 8px;
+      --container: min(1140px, calc(100% - 40px));
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--ink);
-      background: #f7fbff;
-      line-height: 1.5;
+      background: var(--light);
+      line-height: 1.55;
+      text-rendering: optimizeLegibility;
     }
-
-    a {
-      color: inherit;
-      text-decoration: none;
+    a { color: inherit; text-decoration: none; }
+    img, svg { display: block; }
+    .page { overflow: hidden; }
+    .container { width: var(--container); margin: 0 auto; }
+    .section { padding: 86px 0; }
+    .section.alt { background: var(--white); }
+    .section-heading {
+      max-width: 760px;
+      margin: 0 0 34px;
     }
-
-    .page {
-      overflow: hidden;
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      color: var(--primary);
+      font-size: 0.86rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
     }
-
-    .container {
-      width: min(1120px, calc(100% - 40px));
-      margin: 0 auto;
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { color: var(--dark); letter-spacing: 0; }
+    h1 {
+      max-width: 760px;
+      margin: 22px 0 18px;
+      font-size: clamp(2.75rem, 7vw, 5.7rem);
+      line-height: 0.96;
+      font-weight: 900;
     }
-
+    h2 {
+      margin-bottom: 12px;
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.05;
+      font-weight: 850;
+    }
+    h3 {
+      margin-bottom: 8px;
+      font-size: 1.08rem;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+    .section-heading p, .lead {
+      color: var(--muted);
+      font-size: clamp(1.02rem, 1.7vw, 1.18rem);
+    }
+    .gradient-text {
+      color: transparent;
+      background: linear-gradient(105deg, #FFFFFF 0%, #C9F7FF 38%, var(--secondary) 74%, #78AFFF 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
     .topbar {
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
+      inset: 0 0 auto 0;
+      z-index: 20;
       padding: 22px 0;
       color: var(--white);
     }
-
     .topbar-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 18px;
+      gap: 20px;
     }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 800;
-      letter-spacing: 0;
-      font-size: 1.1rem;
-    }
-
     .brand-logo {
-      display: block;
-      width: 172px;
+      width: 176px;
       height: auto;
       padding: 7px 10px;
       border-radius: var(--radius);
       background: rgba(255, 255, 255, 0.96);
-      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
     }
-
-    .domain {
-      color: rgba(255, 255, 255, 0.78);
-      font-size: 0.92rem;
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.94rem;
+      font-weight: 700;
     }
-
     .hero {
-      min-height: 92vh;
-      padding: 116px 0 76px;
+      min-height: 94vh;
+      padding: 118px 0 84px;
       color: var(--white);
       background:
-        radial-gradient(circle at 80% 20%, rgba(24, 213, 255, 0.26), transparent 32%),
-        linear-gradient(140deg, #04142f 0%, #06204a 48%, #0c48a6 100%);
+        radial-gradient(circle at 82% 14%, rgba(0, 212, 170, 0.22), transparent 30%),
+        radial-gradient(circle at 12% 72%, rgba(0, 102, 255, 0.3), transparent 32%),
+        linear-gradient(135deg, #071225 0%, #0A1628 46%, #062E6E 100%);
     }
-
     .hero-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.88fr);
-      gap: 52px;
+      grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.84fr);
+      gap: 56px;
       align-items: center;
     }
-
-    .eyebrow {
+    .eyebrow, .guarantee-badge, .mini-badge {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
       width: fit-content;
-      padding: 8px 12px;
-      border: 1px solid var(--line);
       border-radius: 999px;
+      font-weight: 800;
+    }
+    .eyebrow {
+      gap: 8px;
+      padding: 9px 13px;
+      color: #C9F7FF;
       background: rgba(255, 255, 255, 0.08);
-      color: #c9f7ff;
-      font-weight: 700;
-      font-size: 0.88rem;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      font-size: 0.9rem;
     }
-
     .eyebrow-dot {
-      width: 8px;
-      height: 8px;
+      width: 9px;
+      height: 9px;
       border-radius: 50%;
-      background: var(--cyan);
-      box-shadow: 0 0 0 6px rgba(24, 213, 255, 0.16);
+      background: var(--secondary);
+      box-shadow: 0 0 0 6px rgba(0, 212, 170, 0.18);
     }
-
-    h1,
-    h2,
-    h3,
-    p {
-      margin-top: 0;
-    }
-
-    h1 {
-      max-width: 720px;
-      margin: 24px 0 18px;
-      font-size: clamp(2.35rem, 5.8vw, 4.8rem);
-      line-height: 0.98;
-      letter-spacing: 0;
-    }
-
+    .hero h1 { color: var(--white); }
     .hero-subtitle {
-      max-width: 650px;
-      margin-bottom: 24px;
+      max-width: 680px;
+      margin-bottom: 26px;
       color: rgba(255, 255, 255, 0.82);
-      font-size: clamp(1.06rem, 2vw, 1.28rem);
+      font-size: clamp(1.08rem, 2vw, 1.34rem);
     }
-
     .price-row {
       display: flex;
       align-items: center;
-      gap: 16px;
       flex-wrap: wrap;
-      margin: 26px 0 28px;
+      gap: 14px;
+      margin: 28px 0;
     }
-
     .price {
       display: inline-flex;
       align-items: baseline;
-      gap: 8px;
-      padding: 12px 16px;
+      gap: 10px;
+      padding: 14px 18px;
       border-radius: var(--radius);
       background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.18);
     }
-
-    .price strong {
-      color: var(--cyan);
-      font-size: clamp(2rem, 5vw, 3.4rem);
-      line-height: 1;
-    }
-
-    .price span,
-    .price-note {
+    .price span {
       color: rgba(255, 255, 255, 0.78);
-      font-weight: 700;
+      font-weight: 750;
     }
-
+    .price strong {
+      color: var(--secondary);
+      font-size: clamp(2.05rem, 4.7vw, 3.35rem);
+      line-height: 1;
+      font-weight: 900;
+    }
+    .guarantee-badge {
+      gap: 8px;
+      padding: 11px 14px;
+      color: #DFFFF8;
+      background: rgba(0, 212, 170, 0.13);
+      border: 1px solid rgba(0, 212, 170, 0.34);
+      font-size: 0.92rem;
+    }
     .cta-stack {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 10px;
+      gap: 11px;
     }
-
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 52px;
-      padding: 0 26px;
+      gap: 10px;
+      min-height: 58px;
+      padding: 0 30px;
+      border: 0;
       border-radius: var(--radius);
-      background: var(--white);
-      color: var(--navy);
-      font-weight: 800;
-      border: 2px solid rgba(24, 213, 255, 0.7);
-      box-shadow: 0 18px 42px rgba(24, 213, 255, 0.28);
-      transition: transform 180ms ease, box-shadow 180ms ease;
+      background: linear-gradient(135deg, var(--secondary), #7BF6DF);
+      color: #04121E;
+      font-size: 1rem;
+      font-weight: 900;
+      box-shadow: var(--shadow-cta);
       cursor: pointer;
+      transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
     }
-
-    .button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 24px 50px rgba(24, 213, 255, 0.42);
+    .button:hover, .button:focus-visible {
+      transform: translateY(-3px);
+      filter: saturate(1.08);
+      box-shadow: 0 26px 62px rgba(0, 212, 170, 0.42);
     }
-
-    .microcopy,
+    .button.secondary {
+      background: var(--white);
+      color: var(--dark);
+      box-shadow: 0 18px 42px rgba(10, 22, 40, 0.12);
+    }
+    .microcopy, .hero-mini {
+      color: rgba(255, 255, 255, 0.74);
+      font-size: 0.94rem;
+    }
     .hero-mini {
-      color: rgba(255, 255, 255, 0.76);
-      font-size: 0.92rem;
+      margin: 16px 0 0;
+      font-weight: 750;
     }
-
-    .hero-mini {
-      margin: 18px 0 0;
-      font-weight: 700;
-    }
-
-    .mockup-wrap {
+    .hero-panel {
       position: relative;
-      min-height: 450px;
+      min-height: 454px;
     }
-
-    .laptop {
+    .device {
       position: relative;
-      margin: 26px auto 0;
-      max-width: 470px;
+      margin: 18px auto 0;
+      max-width: 482px;
       padding: 18px;
-      border-radius: 18px;
-      background: #081936;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      box-shadow: var(--shadow);
+      border-radius: 22px;
+      background: rgba(4, 18, 33, 0.82);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: var(--shadow-md);
+      backdrop-filter: blur(16px);
     }
-
     .browser-bar {
       display: flex;
       align-items: center;
       gap: 7px;
       padding-bottom: 14px;
     }
-
     .browser-bar span {
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.34);
     }
-
     .browser-bar .url {
       flex: 1;
       height: 12px;
+      margin-left: 8px;
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.12);
-      margin-left: 8px;
     }
-
     .screen {
+      min-height: 310px;
       overflow: hidden;
-      border-radius: 12px;
-      background: linear-gradient(180deg, #ffffff 0%, #eef8ff 100%);
+      border-radius: 14px;
+      background: linear-gradient(180deg, #FFFFFF 0%, #EEF7FF 100%);
       color: var(--ink);
-      min-height: 300px;
       padding: 22px;
     }
-
     .screen-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 24px;
-      font-size: 0.8rem;
-      font-weight: 800;
-      color: var(--navy);
+      font-size: 0.82rem;
+      font-weight: 900;
+      color: var(--dark);
     }
-
     .screen-pill {
-      width: 72px;
-      height: 24px;
+      width: 76px;
+      height: 26px;
       border-radius: 999px;
-      background: var(--blue);
+      background: var(--primary);
     }
-
+    .screen-title, .screen-line, .screen-cta { border-radius: 999px; }
     .screen-title {
-      width: 78%;
-      height: 22px;
-      border-radius: 999px;
-      background: var(--navy);
+      width: 82%;
+      height: 24px;
       margin-bottom: 12px;
+      background: var(--dark);
     }
-
     .screen-line {
       height: 10px;
-      border-radius: 999px;
-      background: #c6d7e8;
       margin-bottom: 8px;
+      background: #C6D7E8;
     }
-
-    .screen-line.short {
-      width: 68%;
-    }
-
+    .screen-line.short { width: 66%; }
     .screen-cta {
-      width: 150px;
-      height: 38px;
-      border-radius: var(--radius);
-      background: linear-gradient(135deg, var(--cyan), var(--blue));
-      margin: 22px 0;
+      width: 156px;
+      height: 40px;
+      margin: 24px 0;
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
     }
-
     .screen-cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
     }
-
     .screen-card {
-      height: 70px;
+      height: 72px;
       border-radius: var(--radius);
-      background: #ffffff;
-      border: 1px solid #dbe9f6;
-      box-shadow: 0 10px 22px rgba(6, 26, 58, 0.08);
+      background: var(--white);
+      border: 1px solid #DCE9F6;
+      box-shadow: 0 10px 22px rgba(10, 22, 40, 0.08);
     }
-
     .phone {
       position: absolute;
       right: 0;
-      bottom: 8px;
-      width: 145px;
+      bottom: 0;
+      width: 146px;
       padding: 12px;
       border-radius: 24px;
-      background: #07152e;
-      border: 1px solid rgba(255, 255, 255, 0.22);
+      background: #07152E;
+      border: 1px solid rgba(255, 255, 255, 0.2);
       box-shadow: 0 26px 70px rgba(0, 0, 0, 0.32);
     }
-
     .phone-screen {
-      min-height: 245px;
-      border-radius: 17px;
-      background: #ffffff;
+      min-height: 246px;
       padding: 14px;
+      border-radius: 17px;
+      background: var(--white);
     }
-
     .phone-line {
       height: 9px;
-      border-radius: 999px;
-      background: #d6e5f2;
       margin-bottom: 9px;
+      border-radius: 999px;
+      background: #D6E5F2;
     }
-
     .phone-line.main {
       height: 16px;
-      background: var(--navy);
       margin-top: 18px;
+      background: var(--dark);
     }
-
     .phone-button {
       height: 34px;
-      border-radius: var(--radius);
-      background: var(--blue);
       margin: 18px 0;
+      border-radius: var(--radius);
+      background: var(--primary);
     }
-
-    section {
-      padding: 70px 0;
-    }
-
-    .section-heading {
-      max-width: 720px;
-      margin-bottom: 28px;
-    }
-
-    h2 {
-      margin-bottom: 10px;
-      color: var(--navy);
-      font-size: clamp(1.8rem, 3.4vw, 2.6rem);
-      line-height: 1.08;
-      letter-spacing: 0;
-    }
-
-    .section-heading p,
-    .audience p,
-    .offer p {
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    .benefit-grid {
+    .stats-grid, .benefit-grid, .audience-grid, .proof-grid, .plan-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
+      gap: 18px;
     }
-
-    .card {
-      border: 1px solid #dce9f6;
+    .stats-grid {
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: -34px;
+      position: relative;
+      z-index: 5;
+    }
+    .stat-card, .card, .audience-card, .proof-card, .plan-card, .guarantee-box {
+      border: 1px solid var(--line);
       border-radius: var(--radius);
       background: var(--white);
-      padding: 22px;
-      box-shadow: 0 14px 32px rgba(6, 26, 58, 0.07);
+      box-shadow: var(--shadow-sm);
     }
-
+    .stat-card {
+      padding: 22px;
+    }
+    .stat-card strong {
+      display: block;
+      color: var(--primary);
+      font-size: 1.55rem;
+      font-weight: 900;
+    }
+    .stat-card span {
+      color: var(--muted);
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+    .benefit-grid { grid-template-columns: repeat(3, 1fr); }
+    .card {
+      padding: 24px;
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+    .card:hover, .audience-card:hover, .proof-card:hover, .plan-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 102, 255, 0.32);
+      box-shadow: var(--shadow-md);
+    }
     .icon {
-      width: 38px;
-      height: 38px;
+      width: 44px;
+      height: 44px;
       display: grid;
       place-items: center;
+      margin-bottom: 16px;
       border-radius: var(--radius);
-      background: var(--cyan-soft);
-      color: var(--blue);
-      font-weight: 900;
-      margin-bottom: 14px;
+      color: var(--primary);
+      background: var(--soft-blue);
     }
-
+    .icon.green { color: #008F73; background: var(--soft-green); }
     .icon svg {
-      width: 21px;
-      height: 21px;
+      width: 23px;
+      height: 23px;
       stroke: currentColor;
-      stroke-width: 2.2;
+      stroke-width: 2.25;
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
     }
-
-    .card h3 {
-      margin-bottom: 6px;
-      color: var(--navy);
-      font-size: 1.05rem;
-    }
-
-    .card p {
+    .card p, .audience-card p, .proof-card p, .plan-card p {
       margin-bottom: 0;
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.97rem;
     }
-
-    .audience {
-      background: var(--white);
-    }
-
-    .audience-box {
-      display: grid;
-      grid-template-columns: 0.72fr 1fr;
-      gap: 34px;
-      align-items: center;
-      padding: 36px;
-      border-radius: var(--radius);
-      background: linear-gradient(135deg, #eef9ff, #ffffff);
-      border: 1px solid #d9ebf7;
-    }
-
-    .audience-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .audience-tags span {
-      padding: 8px 11px;
-      border-radius: 999px;
-      background: var(--white);
-      border: 1px solid #d7e8f6;
-      color: var(--navy);
-      font-size: 0.92rem;
-      font-weight: 700;
-    }
-
+    .audience-grid { grid-template-columns: repeat(4, 1fr); }
+    .audience-card { padding: 22px; }
     .included-grid {
       display: grid;
-      grid-template-columns: 1fr 0.78fr;
+      grid-template-columns: 1fr 0.82fr;
       gap: 24px;
       align-items: start;
     }
-
     .checklist {
       display: grid;
       gap: 12px;
@@ -487,19 +468,16 @@
       padding: 0;
       list-style: none;
     }
-
     .checklist li {
       display: flex;
       align-items: flex-start;
       gap: 12px;
-      padding: 16px;
+      padding: 15px 16px;
+      border: 1px solid var(--line);
       border-radius: var(--radius);
       background: var(--white);
-      border: 1px solid #dce9f6;
-      color: var(--ink);
-      font-weight: 700;
+      font-weight: 750;
     }
-
     .check {
       flex: 0 0 auto;
       width: 24px;
@@ -507,260 +485,262 @@
       display: grid;
       place-items: center;
       border-radius: 50%;
-      background: var(--cyan-soft);
-      color: var(--blue);
+      background: var(--soft-green);
+      color: #008F73;
       font-weight: 900;
     }
-
-    .stat-panel {
+    .guarantee-box {
       padding: 28px;
-      border-radius: var(--radius);
-      background: var(--navy);
-      color: var(--white);
-      box-shadow: var(--shadow);
-    }
-
-    .stat-panel strong {
-      display: block;
-      color: var(--cyan);
-      font-size: 3.4rem;
-      line-height: 1;
-      margin-bottom: 8px;
-    }
-
-    .stat-panel p {
-      color: rgba(255, 255, 255, 0.78);
-      margin-bottom: 0;
-    }
-
-    .steps {
-      background: var(--white);
-    }
-
-    .step-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-    }
-
-    .step {
-      position: relative;
-      padding: 22px;
-      border-radius: var(--radius);
-      border: 1px solid #dce9f6;
-      background: #f8fcff;
-    }
-
-    .step h3 {
-      color: var(--navy);
-      font-size: 1rem;
-      margin-bottom: 8px;
-    }
-
-    .step p {
-      margin-bottom: 0;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .step-number {
-      display: inline-block;
-      color: var(--blue);
-      font-weight: 900;
-      margin-right: 4px;
-    }
-
-    .offer {
-      padding: 80px 0;
       color: var(--white);
       background:
-        radial-gradient(circle at 16% 22%, rgba(24, 213, 255, 0.2), transparent 30%),
-        linear-gradient(135deg, var(--navy), var(--navy-2));
+        radial-gradient(circle at 90% 20%, rgba(0, 212, 170, 0.24), transparent 32%),
+        linear-gradient(135deg, var(--dark), #0C2D62);
     }
-
+    .guarantee-box h3 { color: var(--white); font-size: 1.35rem; }
+    .guarantee-box p { color: rgba(255, 255, 255, 0.78); }
+    .mini-badge {
+      gap: 8px;
+      padding: 9px 11px;
+      color: #DFFFF8;
+      background: rgba(0, 212, 170, 0.14);
+      border: 1px solid rgba(0, 212, 170, 0.34);
+      font-size: 0.9rem;
+    }
+    .timeline {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 37px;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+    .step {
+      position: relative;
+      z-index: 1;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .step-number {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      border-radius: var(--radius);
+      color: var(--white);
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      font-weight: 900;
+    }
+    .proof-grid { grid-template-columns: repeat(3, 1fr); }
+    .proof-card { overflow: hidden; }
+    .mock-preview {
+      padding: 18px;
+      background: linear-gradient(135deg, var(--soft-blue), var(--soft-green));
+    }
+    .mock-browser {
+      min-height: 172px;
+      padding: 14px;
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 12px 28px rgba(10, 22, 40, 0.12);
+    }
+    .mock-bar, .mock-line, .mock-cta, .mock-tile {
+      border-radius: 999px;
+      background: #D9E4F2;
+    }
+    .mock-bar { width: 44%; height: 12px; margin-bottom: 20px; background: var(--dark); }
+    .mock-line { height: 9px; margin-bottom: 9px; }
+    .mock-line.short { width: 70%; }
+    .mock-cta { width: 110px; height: 28px; margin: 18px 0; background: var(--secondary); }
+    .mock-tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; }
+    .mock-tile { height: 34px; border-radius: var(--radius); background: #EEF5FF; }
+    .proof-body { padding: 22px; }
+    .offer {
+      color: var(--white);
+      background:
+        radial-gradient(circle at 16% 20%, rgba(0, 212, 170, 0.2), transparent 30%),
+        linear-gradient(135deg, var(--dark), #0C2D62);
+    }
     .offer-box {
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 28px;
       align-items: center;
     }
-
-    .offer h2 {
-      color: var(--white);
+    .offer h2 { color: var(--white); }
+    .offer p { max-width: 620px; color: rgba(255, 255, 255, 0.78); }
+    .offer-price { color: var(--secondary); font-weight: 900; }
+    .plan-grid { grid-template-columns: repeat(3, 1fr); }
+    .plan-card {
+      position: relative;
+      padding: 24px;
     }
-
-    .offer p {
-      max-width: 560px;
-      color: rgba(255, 255, 255, 0.76);
-      margin-bottom: 0;
+    .plan-card.featured {
+      border-color: rgba(0, 102, 255, 0.5);
+      box-shadow: var(--shadow-md);
     }
-
-    .offer-price {
-      color: var(--cyan);
+    .plan-chip {
+      display: inline-flex;
+      margin-bottom: 14px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      color: var(--primary);
+      background: var(--soft-blue);
+      font-weight: 900;
+      font-size: 0.82rem;
+    }
+    .plan-price {
+      margin: 14px 0;
+      color: var(--dark);
+      font-size: 2rem;
       font-weight: 900;
     }
-
     .faq-grid {
       display: grid;
       gap: 12px;
     }
-
     details {
-      border: 1px solid #dce9f6;
+      border: 1px solid var(--line);
       border-radius: var(--radius);
       background: var(--white);
-      padding: 18px 20px;
-      box-shadow: 0 10px 24px rgba(6, 26, 58, 0.05);
+      box-shadow: var(--shadow-sm);
     }
-
     summary {
-      cursor: pointer;
-      color: var(--navy);
-      font-weight: 800;
-    }
-
-    details p {
-      margin: 12px 0 0;
-      color: var(--muted);
-    }
-
-    .footer {
-      padding: 34px 0;
-      background: #031128;
-      color: rgba(255, 255, 255, 0.76);
-    }
-
-    .footer-inner {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
+      gap: 16px;
+      padding: 18px 54px 18px 20px;
+      cursor: pointer;
+      color: var(--dark);
+      font-weight: 850;
+      list-style: none;
     }
-
-    .footer strong {
-      color: var(--white);
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      width: 24px;
+      height: 24px;
+      display: grid;
+      place-items: center;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      color: var(--primary);
+      background: var(--soft-blue);
+      font-size: 1.2rem;
+      transition: transform 180ms ease, background 180ms ease;
     }
-
-    .footer p {
+    details[open] summary::after {
+      content: "-";
+      transform: translateY(-50%) rotate(180deg);
+      background: var(--soft-green);
+      color: #008F73;
+    }
+    details p {
       margin: 0;
+      padding: 0 20px 20px;
+      color: var(--muted);
     }
-
+    .footer {
+      padding: 46px 0 92px;
+      color: rgba(255, 255, 255, 0.76);
+      background: #050E1D;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 28px;
+    }
+    .footer strong { color: var(--white); }
+    .footer p { margin-bottom: 10px; }
     .footer a {
-      color: var(--cyan);
-      font-weight: 800;
+      color: rgba(255, 255, 255, 0.82);
+      font-weight: 750;
     }
-
-    @media (max-width: 920px) {
-      .hero-grid,
-      .audience-box,
-      .included-grid,
-      .offer-box {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        min-height: auto;
-      }
-
-      .benefit-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .step-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .mockup-wrap {
-        min-height: 400px;
-      }
-
-      .phone {
-        right: 10px;
-      }
+    .footer a:hover { color: var(--secondary); }
+    .footer-links {
+      display: grid;
+      gap: 8px;
     }
-
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 50;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 54px;
+      padding: 0 18px;
+      border-radius: 999px;
+      color: #03170F;
+      background: linear-gradient(135deg, #25D366, var(--secondary));
+      font-weight: 900;
+      box-shadow: 0 18px 46px rgba(0, 158, 108, 0.34);
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+    .whatsapp-float:hover { transform: translateY(-3px); box-shadow: 0 24px 58px rgba(0, 158, 108, 0.44); }
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 520ms ease, transform 520ms ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hero .reveal {
+      opacity: 1;
+      transform: none;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+    @media (max-width: 940px) {
+      .hero-grid, .included-grid, .offer-box, .footer-grid { grid-template-columns: 1fr; }
+      .hero { min-height: auto; }
+      .stats-grid, .audience-grid, .timeline { grid-template-columns: repeat(2, 1fr); }
+      .benefit-grid, .proof-grid, .plan-grid { grid-template-columns: 1fr 1fr; }
+      .timeline::before { display: none; }
+      .hero-panel { min-height: 420px; }
+      .phone { right: 10px; }
+    }
     @media (max-width: 620px) {
-      .container {
-        width: min(100% - 28px, 1120px);
-      }
-
-      .topbar {
-        padding: 16px 0;
-      }
-
-      .domain {
-        display: none;
-      }
-
-      .brand-logo {
-        width: 146px;
-        padding: 6px 8px;
-      }
-
-      .hero {
-        padding: 92px 0 56px;
-      }
-
-      h1 {
-        font-size: 2.45rem;
-      }
-
-      section {
-        padding: 50px 0;
-      }
-
-      .button {
-        width: 100%;
-        min-height: 54px;
-        padding: 0 18px;
-        text-align: center;
-      }
-
-      .benefit-grid,
-      .step-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .audience-box {
-        padding: 24px;
-      }
-
-      .mockup-wrap {
-        min-height: 365px;
-      }
-
-      .laptop {
-        padding: 12px;
-      }
-
-      .screen {
-        min-height: 260px;
-        padding: 16px;
-      }
-
-      .screen-cards {
-        grid-template-columns: 1fr;
-      }
-
-      .screen-card {
-        height: 34px;
-      }
-
-      .phone {
-        width: 118px;
-        bottom: -10px;
-        right: -2px;
-        padding: 9px;
-      }
-
-      .phone-screen {
-        min-height: 198px;
-      }
-
-      .offer-box {
-        gap: 22px;
-      }
+      :root { --container: min(100% - 28px, 1140px); }
+      .topbar { padding: 16px 0; }
+      .brand-logo { width: 146px; padding: 6px 8px; }
+      .nav-actions { display: none; }
+      .hero { padding: 92px 0 58px; }
+      h1 { font-size: 2.65rem; }
+      .section { padding: 58px 0; }
+      .button { width: 100%; min-height: 58px; padding: 0 18px; text-align: center; }
+      .price { width: 100%; justify-content: space-between; }
+      .stats-grid, .benefit-grid, .audience-grid, .timeline, .proof-grid, .plan-grid { grid-template-columns: 1fr; }
+      .hero-panel { min-height: 365px; }
+      .device { padding: 12px; }
+      .screen { min-height: 260px; padding: 16px; }
+      .screen-cards { grid-template-columns: 1fr; }
+      .screen-card { height: 34px; }
+      .phone { width: 118px; bottom: -10px; right: -2px; padding: 9px; }
+      .phone-screen { min-height: 198px; }
+      .whatsapp-float { left: auto; right: 14px; bottom: 14px; width: 56px; padding: 0; font-size: 0; }
+      .whatsapp-float svg { width: 24px; height: 24px; }
     }
   </style>
 </head>
@@ -768,41 +748,45 @@
   <div class="page">
     <header class="topbar" aria-label="Topo">
       <div class="container topbar-inner">
-        <a class="brand" href="#" aria-label="SiteSpeed">
-          <img class="brand-logo" src="assets/logo-sitespeed.jpg" alt="SiteSpeed" width="720" height="177">
+        <a href="#topo" aria-label="SiteSpeed">
+          <picture>
+            <source srcset="assets/logo-sitespeed.webp" type="image/webp">
+            <img class="brand-logo" src="assets/logo-sitespeed.jpg" alt="SiteSpeed" width="720" height="177" loading="lazy" decoding="async">
+          </picture>
         </a>
-        <span class="domain">sitespeed.online</span>
+        <nav class="nav-actions" aria-label="Navegação principal">
+          <a href="#beneficios">Benefícios</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#faq">FAQ</a>
+        </nav>
       </div>
     </header>
 
-    <main>
+    <main id="topo">
       <section class="hero" aria-labelledby="hero-title">
         <div class="container hero-grid">
-          <div>
+          <div class="reveal">
             <div class="eyebrow"><span class="eyebrow-dot"></span> Presença online em 24 horas para negócios locais</div>
-            <h1 id="hero-title">Site profissional em 24 horas.</h1>
-            <p class="hero-subtitle">Uma página rápida, responsiva e pronta para divulgar — com link para enviar aos clientes no mesmo dia.</p>
+            <h1 id="hero-title"><span class="gradient-text">Site profissional</span> em 24 horas.</h1>
+            <p class="hero-subtitle">Uma página rápida, responsiva e pronta para divulgar, com link para enviar aos clientes no mesmo dia.</p>
             <div class="price-row">
               <div class="price" aria-label="Preço R$ 99,90">
                 <span>pagamento único</span>
                 <strong>R$ 99,90</strong>
               </div>
-              <span class="price-note">sem mensalidade</span>
+              <span class="guarantee-badge">✓ Entrega garantida em 24h</span>
             </div>
             <div class="cta-stack">
               <a class="button checkout-link" href="https://buy.stripe.com/eVqbJ24Y32zlbWO2FH9oc04">Quero meu site em 24h</a>
-              <span class="microcopy">Pagamento e envio das informações combinados pelo atendimento.</span>
+              <span class="microcopy">Pagamento único, sem mensalidade. Envio das informações combinado pelo atendimento.</span>
             </div>
-            <p class="hero-mini">Link pronto para divulgar seu negócio</p>
+            <p class="hero-mini">Link pronto para divulgar seu negócio no WhatsApp, Instagram e Google.</p>
           </div>
 
-          <div class="mockup-wrap" aria-label="Mockup visual de site em notebook e celular">
-            <div class="laptop">
+          <div class="hero-panel reveal" aria-label="Mockup visual de site em notebook e celular">
+            <div class="device">
               <div class="browser-bar" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="url"></div>
+                <span></span><span></span><span></span><div class="url"></div>
               </div>
               <div class="screen">
                 <div class="screen-header">
@@ -834,82 +818,76 @@
         </div>
       </section>
 
-      <section aria-labelledby="benefits-title">
+      <div class="container stats-grid" aria-label="Números de impacto">
+        <div class="stat-card reveal"><strong>24h</strong><span>Entrega em até 24 horas</span></div>
+        <div class="stat-card reveal"><strong>50+</strong><span>Modelos disponíveis</span></div>
+        <div class="stat-card reveal"><strong>100%</strong><span>Responsivo no celular</span></div>
+        <div class="stat-card reveal"><strong>Suporte</strong><span>Atendimento incluso</span></div>
+      </div>
+
+      <section id="beneficios" class="section" aria-labelledby="benefits-title">
         <div class="container">
-          <div class="section-heading">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Benefícios</span>
             <h2 id="benefits-title">O essencial para aparecer online rápido</h2>
-            <p>Tudo que um negócio local precisa para aparecer online com credibilidade — sem complicação, sem espera, sem mensalidade.</p>
+            <p>Tudo que um negócio local precisa para aparecer online com credibilidade, sem complicação, sem espera e sem mensalidade.</p>
           </div>
           <div class="benefit-grid">
-            <article class="card">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M7 17 17 7"></path><path d="M9 7h8v8"></path><path d="M5 5h6"></path><path d="M5 12h4"></path><path d="M5 19h14"></path></svg>
-              </div>
-              <h3>Link pronto para WhatsApp, Instagram e Google</h3>
-              <p>Receba um endereço final para divulgar nos canais onde seus clientes já estão.</p>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24"><path d="M7 17 17 7"></path><path d="M9 7h8v8"></path><path d="M5 5h6"></path><path d="M5 12h4"></path><path d="M5 19h14"></path></svg></div>
+              <h3>Link pronto para divulgar</h3>
+              <p>Use no WhatsApp, Instagram, Google Meu Negócio e cartões digitais.</p>
             </article>
-            <article class="card">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.7 7.1L4 20l1.4-4.1A8 8 0 1 1 20 11.5Z"></path><path d="M9 9.5c.4 2.1 1.8 3.7 4 4.6"></path><path d="M14 14.2h1.6"></path></svg>
-              </div>
-              <h3>Botão de contato direto via WhatsApp</h3>
-              <p>Facilite o atendimento de quem quer pedir orçamento, tirar dúvidas ou comprar.</p>
+            <article class="card reveal">
+              <div class="icon green"><svg viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.7 7.1L4 20l1.4-4.1A8 8 0 1 1 20 11.5Z"></path><path d="M9 9.5c.4 2.1 1.8 3.7 4 4.6"></path><path d="M14 14.2h1.6"></path></svg></div>
+              <h3>Botão direto para WhatsApp</h3>
+              <p>Facilite pedidos, orçamentos e dúvidas com contato imediato.</p>
             </article>
-            <article class="card">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 3 4 7v10l8 4 8-4V7l-8-4Z"></path><path d="M12 3v18"></path><path d="m4 7 8 4 8-4"></path></svg>
-              </div>
-              <h3>Identidade visual com as cores da sua marca</h3>
-              <p>Ajuste visual para a página parecer sua, não um modelo genérico.</p>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3 4 7v10l8 4 8-4V7l-8-4Z"></path><path d="M12 3v18"></path><path d="m4 7 8 4 8-4"></path></svg></div>
+              <h3>Identidade visual da marca</h3>
+              <p>A página recebe cores, tom e estrutura alinhados ao seu negócio.</p>
             </article>
-            <article class="card">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"></rect><path d="M10 18h4"></path></svg>
-              </div>
-              <h3>Funciona perfeitamente no celular e no computador</h3>
-              <p>A página fica clara, rápida e fácil de acessar em qualquer tela.</p>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"></rect><path d="M10 18h4"></path></svg></div>
+              <h3>Celular e computador</h3>
+              <p>Layout responsivo, leve e fácil de navegar em qualquer tela.</p>
             </article>
-            <article class="card">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"></path></svg>
-              </div>
-              <h3>Design limpo que transmite confiança ao cliente</h3>
-              <p>Visual direto, profissional e preparado para apresentar seu negócio com segurança.</p>
+            <article class="card reveal">
+              <div class="icon green"><svg viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"></path></svg></div>
+              <h3>Visual profissional</h3>
+              <p>Design limpo que transmite confiança para clientes novos.</p>
             </article>
-            <article class="card">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 3.5 3.5"></path><path d="M8.5 11h5"></path><path d="M11 8.5v5"></path></svg>
-              </div>
-              <h3>Estrutura técnica para ser encontrado no Google</h3>
-              <p>Organização básica de conteúdo para serviços, localização e diferenciais.</p>
+            <article class="card reveal">
+              <div class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 3.5 3.5"></path><path d="M8.5 11h5"></path><path d="M11 8.5v5"></path></svg></div>
+              <h3>Base para Google</h3>
+              <p>Estrutura técnica básica para serviços, localização e diferenciais.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="audience" aria-labelledby="audience-title">
-        <div class="container audience-box">
-          <div>
-            <h2 id="audience-title">Para quem precisa estar online hoje.</h2>
-            <p>Autônomos, MEIs, prestadores de serviço, salões, clínicas, deliveries, oficinas, lojas locais e profissionais liberais que ainda dependem só do boca a boca ou das redes sociais.</p>
+      <section class="section alt" aria-labelledby="audience-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Para quem é</span>
+            <h2 id="audience-title">Para quem precisa estar online hoje</h2>
+            <p>Ideal para quem ainda depende só do boca a boca ou das redes sociais para apresentar o negócio.</p>
           </div>
-          <div class="audience-tags" aria-label="Tipos de negócios atendidos">
-            <span>Autônomos</span>
-            <span>MEIs</span>
-            <span>Lojas locais</span>
-            <span>Salões</span>
-            <span>Clínicas</span>
-            <span>Delivery</span>
-            <span>Oficinas</span>
-            <span>Profissionais liberais</span>
+          <div class="audience-grid">
+            <article class="audience-card reveal"><div class="icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><h3>Autônomos e MEIs</h3><p>Apresente seus serviços com um link profissional e direto.</p></article>
+            <article class="audience-card reveal"><div class="icon green"><svg viewBox="0 0 24 24"><path d="M3 21h18"></path><path d="M5 21V7l8-4v18"></path><path d="M19 21V11l-6-4"></path></svg></div><h3>Lojas locais</h3><p>Mostre produtos, localização, horários e formas de contato.</p></article>
+            <article class="audience-card reveal"><div class="icon"><svg viewBox="0 0 24 24"><path d="m4 19 6-6"></path><path d="m14 5 5 5"></path><path d="m11 8 5 5"></path><path d="m2 22 2-3"></path></svg></div><h3>Salões e clínicas</h3><p>Tenha uma página bonita para serviços, agenda e WhatsApp.</p></article>
+            <article class="audience-card reveal"><div class="icon green"><svg viewBox="0 0 24 24"><path d="M3 7h13v10H3z"></path><path d="M16 10h3l2 3v4h-5"></path><circle cx="7" cy="19" r="2"></circle><circle cx="18" cy="19" r="2"></circle></svg></div><h3>Delivery e oficinas</h3><p>Facilite pedidos, orçamentos e atendimento rápido pelo celular.</p></article>
           </div>
         </div>
       </section>
 
-      <section aria-labelledby="included-title">
+      <section class="section" aria-labelledby="included-title">
         <div class="container included-grid">
-          <div>
+          <div class="reveal">
             <div class="section-heading">
+              <span class="section-kicker">Incluso</span>
               <h2 id="included-title">O que está incluso</h2>
               <p>Uma estrutura enxuta para colocar seu negócio no ar com clareza, contato fácil e apresentação profissional.</p>
             </div>
@@ -922,88 +900,139 @@
               <li><span class="check">✓</span> Entrega em até 24h após envio das informações</li>
             </ul>
           </div>
-          <aside class="stat-panel" aria-label="Resumo da entrega">
-            <strong>24h</strong>
-            <p>Depois do envio completo das informações, sua página entra na fila de montagem para entrega rápida.</p>
+          <aside class="guarantee-box reveal" aria-label="Garantias">
+            <span class="mini-badge">✓ Garantia de satisfação ou reembolso</span>
+            <h3>Entrega no prazo, com revisão incluída.</h3>
+            <p>Se todas as informações forem enviadas corretamente, sua página entra em produção e é entregue em até 24 horas úteis. Ajustes básicos de texto, cores e contato estão incluídos.</p>
+            <ul class="checklist">
+              <li><span class="check">✓</span> Entrega no prazo combinado</li>
+              <li><span class="check">✓</span> Revisões básicas incluídas</li>
+            </ul>
           </aside>
         </div>
       </section>
 
-      <section class="steps" aria-labelledby="steps-title">
+      <section id="como-funciona" class="section alt" aria-labelledby="steps-title">
         <div class="container">
-          <div class="section-heading">
-            <h2 id="steps-title">Como funciona</h2>
-            <p>Processo simples para sair do zero e ter um link divulgável.</p>
+          <div class="section-heading reveal">
+            <span class="section-kicker">Como funciona</span>
+            <h2 id="steps-title">Do pedido ao link pronto em quatro passos</h2>
+            <p>Um fluxo simples para você sair do zero e começar a divulgar seu negócio.</p>
           </div>
-          <div class="step-grid">
-            <article class="step">
-              <h3><span class="step-number">01 —</span> Você solicita</h3>
-              <p>Clica no botão e combina o atendimento pelo WhatsApp.</p>
+          <div class="timeline">
+            <article class="step reveal"><span class="step-number">1</span><h3>Você solicita</h3><p>Clica no botão e faz o pagamento com segurança.</p></article>
+            <article class="step reveal"><span class="step-number">2</span><h3>Envia as informações</h3><p>Nome, contato, logo, cores e descrição dos serviços.</p></article>
+            <article class="step reveal"><span class="step-number">3</span><h3>A gente monta</h3><p>Sua página entra na fila e fica pronta em até 24 horas.</p></article>
+            <article class="step reveal"><span class="step-number">4</span><h3>Você recebe o link</h3><p>Pronto para divulgar no WhatsApp, Instagram e Google.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="proof-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Exemplos ilustrativos</span>
+            <h2 id="proof-title">Por que escolher a SiteSpeed?</h2>
+            <p>Modelos pensados para negócios locais que precisam parecer confiáveis rapidamente.</p>
+          </div>
+          <div class="proof-grid">
+            <article class="proof-card reveal">
+              <div class="mock-preview"><div class="mock-browser"><div class="mock-bar"></div><div class="mock-line"></div><div class="mock-line short"></div><div class="mock-cta"></div><div class="mock-tiles"><span class="mock-tile"></span><span class="mock-tile"></span><span class="mock-tile"></span></div></div></div>
+              <div class="proof-body"><h3>Salão de Beleza Elegance</h3><p>Site simples com galeria, serviços e botão para agendamento.</p></div>
             </article>
-            <article class="step">
-              <h3><span class="step-number">02 —</span> Envia as informações</h3>
-              <p>Nome do negócio, contato, logo, cores e descrição dos serviços.</p>
+            <article class="proof-card reveal">
+              <div class="mock-preview"><div class="mock-browser"><div class="mock-bar"></div><div class="mock-line"></div><div class="mock-line"></div><div class="mock-cta"></div><div class="mock-tiles"><span class="mock-tile"></span><span class="mock-tile"></span><span class="mock-tile"></span></div></div></div>
+              <div class="proof-body"><h3>Eletricista João Silva</h3><p>Landing page com serviços, regiões atendidas e WhatsApp direto.</p></div>
             </article>
-            <article class="step">
-              <h3><span class="step-number">03 —</span> A gente monta</h3>
-              <p>Sua página entra na fila e fica pronta em até 24 horas.</p>
-            </article>
-            <article class="step">
-              <h3><span class="step-number">04 —</span> Você recebe o link</h3>
-              <p>Pronto para divulgar no WhatsApp, Instagram e onde quiser.</p>
+            <article class="proof-card reveal">
+              <div class="mock-preview"><div class="mock-browser"><div class="mock-bar"></div><div class="mock-line"></div><div class="mock-line short"></div><div class="mock-cta"></div><div class="mock-tiles"><span class="mock-tile"></span><span class="mock-tile"></span><span class="mock-tile"></span></div></div></div>
+              <div class="proof-body"><h3>Lanchonete Sabor da Vila</h3><p>Cardápio online, endereço, horário e chamada para pedidos.</p></div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="offer" aria-labelledby="offer-title">
-        <div class="container offer-box">
+      <section class="section offer" aria-labelledby="offer-title">
+        <div class="container offer-box reveal">
           <div>
             <h2 id="offer-title">Seu negócio merece estar online hoje.</h2>
-            <p><span class="offer-price">R$ 99,90</span> — página profissional entregue em até 24 horas.</p>
+            <p><span class="offer-price">R$ 99,90</span> — página profissional entregue em até 24 horas, sem mensalidade.</p>
           </div>
           <a class="button checkout-link" href="https://buy.stripe.com/eVqbJ24Y32zlbWO2FH9oc04">Quero meu site agora</a>
         </div>
       </section>
 
-      <section aria-labelledby="faq-title">
+      <section id="planos" class="section alt" aria-labelledby="plans-title">
         <div class="container">
-          <div class="section-heading">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Planos</span>
+            <h2 id="plans-title">Estrutura preparada para crescer</h2>
+            <p>Hoje você começa com o plano essencial. A estrutura já deixa espaço para upgrades futuros.</p>
+          </div>
+          <div class="plan-grid">
+            <article class="plan-card reveal"><span class="plan-chip">Básico</span><h3>Presença inicial</h3><p>Uma página profissional para divulgar seu negócio.</p><div class="plan-price">R$ 99,90</div></article>
+            <article class="plan-card featured reveal"><span class="plan-chip">Profissional</span><h3>Mais conversão</h3><p>Opção futura para mais seções, provas e otimizações.</p><div class="plan-price">Em breve</div></article>
+            <article class="plan-card reveal"><span class="plan-chip">Premium</span><h3>Expansão</h3><p>Opção futura para domínio, páginas extras e integrações.</p><div class="plan-price">Em breve</div></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">FAQ</span>
             <h2 id="faq-title">Perguntas frequentes</h2>
           </div>
           <div class="faq-grid">
-            <details>
-              <summary>O site fica pronto em 24h?</summary>
-              <p>Sim. Após receber todas as informações, sua página entra em produção e é entregue em até 24 horas úteis.</p>
-            </details>
-            <details>
-              <summary>Posso usar minhas cores?</summary>
-              <p>Sim. O layout é ajustado com as cores e identidade visual da sua marca.</p>
-            </details>
-            <details>
-              <summary>O botão chama no WhatsApp?</summary>
-              <p>Sim. O botão leva direto para o seu número, facilitando o contato de clientes interessados.</p>
-            </details>
-            <details>
-              <summary>Já vem com domínio?</summary>
-              <p>A entrega inclui um link funcional pronto para divulgar. Domínio próprio, como seunegocio.com.br, pode ser configurado separadamente mediante orçamento.</p>
-            </details>
-            <details>
-              <summary>Preciso saber de tecnologia?</summary>
-              <p>Não. Você envia as informações e nós cuidamos de tudo. Nenhum conhecimento técnico necessário.</p>
-            </details>
+            <details class="reveal"><summary>O site fica pronto em 24h?</summary><p>Sim. Após receber todas as informações, sua página entra em produção e é entregue em até 24 horas úteis.</p></details>
+            <details class="reveal"><summary>Posso usar minhas cores?</summary><p>Sim. O layout é ajustado com as cores e a identidade visual da sua marca.</p></details>
+            <details class="reveal"><summary>O botão chama no WhatsApp?</summary><p>Sim. O botão leva direto para o seu número, facilitando o contato de clientes interessados.</p></details>
+            <details class="reveal"><summary>Já vem com domínio?</summary><p>A entrega inclui um link funcional pronto para divulgar. Domínio próprio pode ser configurado separadamente mediante orçamento.</p></details>
+            <details class="reveal"><summary>Preciso saber de tecnologia?</summary><p>Não. Você envia as informações e nós cuidamos de tudo. Nenhum conhecimento técnico é necessário.</p></details>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container footer-inner">
-        <p><strong>SiteSpeed</strong> — Presença online em 24 horas para negócios locais.</p>
-        <p>sitespeed.online · <a href="https://wa.me/message/O5MWA4S46OODL1">contato via WhatsApp</a></p>
+      <div class="container footer-grid">
+        <div>
+          <p><strong>SiteSpeed</strong> — Presença online em 24 horas para negócios locais.</p>
+          <p>Feito com ❤️ para pequenos negócios.</p>
+          <p>Copyright © 2024 SiteSpeed.</p>
+        </div>
+        <div class="footer-links" aria-label="Links institucionais">
+          <a href="#topo">Sobre</a>
+          <a href="https://wa.me/5511999999999?text=Olá,%20quero%20um%20site%20em%2024h">Contato</a>
+          <a href="#planos">Termos</a>
+          <a href="#planos">Privacidade</a>
+        </div>
+        <div class="footer-links" aria-label="Redes sociais">
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+          <a href="https://wa.me/5511999999999?text=Olá,%20quero%20um%20site%20em%2024h">WhatsApp</a>
+        </div>
       </div>
     </footer>
   </div>
 
+  <a class="whatsapp-float" href="https://wa.me/5511999999999?text=Olá,%20quero%20um%20site%20em%2024h" aria-label="Falar com a SiteSpeed no WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.57 2 2.13 6.44 2.13 11.91c0 1.75.46 3.46 1.34 4.96L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.44 9.9-9.91A9.91 9.91 0 0 0 12.04 2Zm0 18.16h-.01a8.22 8.22 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.4c0-4.54 3.69-8.23 8.23-8.23a8.2 8.2 0 0 1 8.23 8.24c0 4.54-3.69 8.24-8.23 8.24Zm4.51-6.16c-.25-.12-1.46-.72-1.68-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.41 1.02 2.57.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.17.21-.58.21-1.07.14-1.17-.06-.1-.23-.16-.48-.28Z"/></svg>
+    WhatsApp
+  </a>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+
+    document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+  </script>
 </body>
 </html>
